@@ -1,0 +1,36 @@
+{% extends 'todo/base.html' %}
+
+{% block content %}
+
+<h1 xmlns:yesno="http://www.w3.org/1999/xhtml">To Do Items</h1>
+
+    <ul>
+    {% for item in items %}
+        <li>
+            <form action="{% url 'todo:update' %}" method="POST" style="display:inline-block;">
+                {% csrf_token %}
+                <input type="hidden" name="id" value="{{ item.pk }}" />
+                <input type="text" name="text" value="{{ item.text }}" />
+                <label><input type="checkbox" name="completed" {{ item.completed|yesno:"checked," }} /> Completed</label>
+                <button type="submit">Save</button>
+            </form>
+            <form action="{% url 'todo:delete' %}" method="POST" style="display:inline-block;">
+                {% csrf_token %}
+                <input type="hidden" name="id" value="{{ item.pk }}" />
+                <button type="submit">Delete</button>
+            </form>
+        </li>
+    {% empty %}
+        <li>No items in the list.</li>
+    {% endfor %}
+    </ul>
+
+    <h2>Create Item</h2>
+
+    <form action="{% url 'todo:create' %}" method="POST">
+        {% csrf_token %}
+        <label for="text">Item text: </label> <input type="text" name="text" id="text" />
+        <button type="submit">Create</button>
+    </form>
+
+{% endblock %}

@@ -1,0 +1,29 @@
+{
+  "AWSEBDockerrunVersion": 2,
+  "containerDefinitions": [
+    {
+      "name": "server",
+      "image": "102797488641.dkr.ecr.us-east-1.amazonaws.com/engineerica/testserver:latest",
+      "essential": true,
+      "memory": 200,
+      "cpu": 1
+    },
+    {
+      "name": "proxy",
+      "image": "102797488641.dkr.ecr.us-east-1.amazonaws.com/engineerica/testproxy:latest",
+      "essential": true,
+      "memory": 200,
+      "cpu": 1,
+      "portMappings": [
+        {
+          "hostPort": 80,
+          "containerPort": 80,
+          "protocol": "tcp"
+        }
+      ],
+      "links": [
+        "server:server"
+      ]
+    }
+  ]
+}
