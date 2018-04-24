@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Pillow on Learn-Serverless.org</title>
+    <link>https://learn-serveless.org/tags/pillow/</link>
+    <description>Recent content in Pillow on Learn-Serverless.org</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Tue, 21 Nov 2017 18:25:22 +0530</lastBuildDate>
+    
+	<atom:link href="https://learn-serveless.org/tags/pillow/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Deploying PIL/Pillow to AWS Lambda </title>
+      <link>https://learn-serveless.org/post/deploying-pillow-aws-lambda/</link>
+      <pubDate>Tue, 21 Nov 2017 18:25:22 +0530</pubDate>
+      
+      <guid>https://learn-serveless.org/post/deploying-pillow-aws-lambda/</guid>
+      <description>&lt;p&gt;When going serverless with Python and AWS Lambda, one of the first things we want to do is upload libraries, such as PIL. There are amazing tools to do this, such as Zappa, but&amp;hellip; what if we want to do it with that?
+&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

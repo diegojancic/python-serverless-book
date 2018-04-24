@@ -1,5 +1,4 @@
-import boto3
-import os
+import boto3, os
 
 def lambda_handler(event, context):
     from_address = os.environ["FROM_ADDRESS"]
@@ -12,13 +11,7 @@ def lambda_handler(event, context):
             'ToAddresses': [to_address,],
         },
         Message={
-            'Subject': {
-                'Data': 'Hello from AWS!'
-            },
-            'Body': {
-                'Text': {
-                    'Data': 'Message body goes here'
-                }
-            }
+            'Subject': { 'Data': 'Hello from AWS!'},
+            'Body': { 'Text': { 'Data': 'Message body goes here!' } }
         },
     )
