@@ -1,4 +1,4 @@
-baseurl = "https://learn-serveless.org/"
+baseurl = "https://d2wg8k1x5s4bdi.cloudfront.net/"
 title = "Learn-Serverless.org"
 theme = "hugo-nederburg-theme"
 languageCode = "en-us"

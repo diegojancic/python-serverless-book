@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Categories on Learn-Serverless.org</title>
-    <link>https://learn-serveless.org/categories/</link>
+    <link>https://d2wg8k1x5s4bdi.cloudfront.net/categories/</link>
     <description>Recent content in Categories on Learn-Serverless.org</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Tue, 21 Nov 2017 18:25:22 +0530</lastBuildDate>
     
-	<atom:link href="https://learn-serveless.org/categories/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://d2wg8k1x5s4bdi.cloudfront.net/categories/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Articles</title>
-      <link>https://learn-serveless.org/categories/articles/</link>
+      <link>https://d2wg8k1x5s4bdi.cloudfront.net/categories/articles/</link>
       <pubDate>Tue, 21 Nov 2017 18:25:22 +0530</pubDate>
       
-      <guid>https://learn-serveless.org/categories/articles/</guid>
+      <guid>https://d2wg8k1x5s4bdi.cloudfront.net/categories/articles/</guid>
       <description></description>
     </item>
     
