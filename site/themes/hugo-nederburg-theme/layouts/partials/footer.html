@@ -1,9 +1,8 @@
 <footer id="site-footer" class="site-footer" role="contentinfo">
-	<h1>
-    {{ with .Site.Title }}
-    <a href=""> {{ . }} </a>
-    {{ end }}
-	</h1>
+	<div style="text-align: center;">
+        <a href="/"><img src="{{.Site.BaseURL}}img/site-logo-sm.png" style="margin: 0 auto;width: 300px;height:58px;max-width: 100%;" /></a>
+    </div>
+
 
 			{{ with .Site.Params.Slogan }}
 			<p class="site-description">{{ . | default "" | safeHTML }}</p>

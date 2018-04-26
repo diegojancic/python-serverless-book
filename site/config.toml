@@ -1,4 +1,4 @@
-baseurl = "https://d2wg8k1x5s4bdi.cloudfront.net/"
+baseurl = "https://learn-serverless.org/"
 title = "Learn-Serverless.org"
 theme = "hugo-nederburg-theme"
 languageCode = "en-us"
@@ -10,7 +10,7 @@ preserveTaxonomyNames = true
 paginate = 5 #frontpage pagination
 
 [params]
-  slogan = "We're everywhere."
+  slogan = "We're always up."
   description = "The starting point to learn Serverless programming."
   #author = "Diego"
   #authorLink = "https://appernetic.io/"
@@ -50,7 +50,7 @@ paginate = 5 #frontpage pagination
   weight = 2
 
   [[menu.main]]
-  name = "Publish in this site"
+  name = "Contribute"
   url = "contact/"
   weight = 3
 
