@@ -2,7 +2,7 @@
 
 ## Building the Perfect Stack for Startups
 
-> 📝 **Author's Note (2024)**: This book was originally written in 2019 but was never completed. While the core technologies and concepts covered (Python, Django, AWS Lambda, serverless architecture) remain valid and useful in many scenarios, the landscape has evolved significantly. 
+> 📝 **Author's Note (2025)**: This book was originally written in 2019 but was never completed. While the core technologies and concepts covered (Python, Django, AWS Lambda, serverless architecture) remain valid and useful in many scenarios, the landscape has evolved significantly. 
 >
 > With advances in AI, containerization, and cloud platforms, today's recommendations for building scalable web applications might differ depending on your team's expertise, project requirements, and the current technology ecosystem. However, the fundamental principles and hands-on examples in this book still provide valuable learning opportunities.
 >
