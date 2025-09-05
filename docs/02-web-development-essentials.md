@@ -444,7 +444,7 @@ Now, let's create the basic markup for our base file:
     <title>To do items</title>
 </head>
 <body>
-    {% block content %}{% endblock %}
+    {%raw%}{% block content %}{% endblock %}{%endraw%}
 </body>
 </html>
 ```
@@ -455,7 +455,7 @@ Now that we have created a block called 'content' (that's the parameter after th
 
 **index.html**
 ```html
-{% extends 'todo/base.html' %}
+{%raw%}{% extends 'todo/base.html' %}
 
 {% block content %}
     <h1>To Do Items</h1>
@@ -466,7 +466,7 @@ Now that we have created a block called 'content' (that's the parameter after th
         <li>No items in the list.</li>
     {% endfor %}
     </ul>
-{% endblock %}
+{% endblock %}{%endraw%}
 ```
 
 Here's the template for our index page. In the first line we specify what other template it's extending. Note that the templates folder is not mentioned in the path; we just need to include whatever's after the templates folder in the path to our file.
@@ -598,8 +598,8 @@ Note that in the second line we had to add the import to our view and also add t
 ```html
 ...
 <h2>Create Item</h2>
-<form action="{% url 'todo:create' %}" method="POST">
-  {% csrf_token %}
+<form action="{%raw%}{% url 'todo:create' %}{%endraw%}" method="POST">
+  {%raw%}{% csrf_token %}{%endraw%}
   <label for="text">Item text: </label>
   <input type="text" name="text" id="text" />
   <button type="submit">Create</button>
@@ -654,7 +654,7 @@ And finally update our template file:
 ```html
 ...
 <ul>
-  {% for item in items %}
+{%raw%}  {% for item in items %}
     <li>
       <form action="{% url 'todo:update' %}" method="POST">
         {% csrf_token %}
@@ -671,7 +671,7 @@ And finally update our template file:
     </li>
   {% empty %}
     <li>No items in the list.</li>
-  {% endfor %}
+  {% endfor %}{%endraw%}
 </ul>
 ...
 ```

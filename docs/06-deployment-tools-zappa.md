@@ -147,7 +147,7 @@ secret_key     ****************sDr9 shared-credentials-file
 
 Now, let's set up Zappa by running `zappa init`:
 
-![Zappa Init Wizard](images/image15.png)
+![Zappa Init Wizard](images/image15.jpg)
 
 As you can see the wizard is incredibly user-friendly and provides you with easy-to-follow instructions. Let's see what each option means:
 
@@ -603,7 +603,7 @@ Now, let's add that file to our pages. In the base template, we will load the st
 
 **./static-files/todo/templates/todo/base.html**
 ```html
-{% load static %}
+{%raw%}{% load static %}
 <!DOCTYPE HTML>
 <html lang="en-US">
 <head>
@@ -615,7 +615,7 @@ Now, let's add that file to our pages. In the base template, we will load the st
 <body>
   {% block content %}{% endblock %}
 </body>
-</html>
+</html>{%endraw%}
 ```
 
 If we run our development server (`python manage.py runserver`) the styles file will be loaded. That only works because we are running in debug mode and not in production though. Let's move on to our production servers (or functions?).

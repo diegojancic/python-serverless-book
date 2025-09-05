@@ -198,7 +198,7 @@ Both configurations are perfectly fine. Using a URL as origin has the advantage 
 
 There's a third setup that is also completely valid. Let's start with a picture that shows how it would look:
 
-![CloudFront for All Traffic](images/image5.png)
+![CloudFront for All Traffic](images/image5.jpg)
 
 As you can see, it's also possible to direct all the traffic through our CloudFront distribution. The static content is cached while the dynamic content is not. You might be wondering why we want to put a proxy in front of our server. The reason is that, even for dynamic content, CloudFront can speed up the server's response and even protect our server from certain Denial of Service attacks.
 
@@ -318,7 +318,7 @@ We are getting that Message Rejected error because our AWS account is still in a
 
 To get out of the sandbox, go to the SES service, then to Sending Statistics, and you should see a message like the following:
 
-![SES Sandbox Message](images/image7.png)
+![SES Sandbox Message](images/image7.jpg)
 
 Following the steps there, you can request Amazon to get your account out of the sandbox. While your account is sandboxed you can only send emails to and from addresses you have verified.
 
