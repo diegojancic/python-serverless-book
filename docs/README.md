@@ -78,10 +78,6 @@
 
 - [**Appendix A: Running Docker in Production**](appendix-a-docker-production.md)
 
-## Images
-
-All images referenced in this book can be found in the [images](images/) directory.
-
 ---
 
-*This book explores building scalable serverless applications using Python, Django, and AWS Lambda, with a focus on creating the perfect technology stack for startup companies.*
+*This book explores building scalable serverless applications using Python, Django, and AWS Lambda.*
