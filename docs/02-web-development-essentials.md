@@ -449,7 +449,7 @@ Now, let's create the basic markup for our base file:
 </html>
 ```
 
-That's all basic HTML markup, except for the only line inside the body tag. The `{% … %}` tags in the content are Django-specific and are used to provide some kind of logic while the template is being rendered. It's the equivalent to `<?php ?>` in PHP or the `<% … %>` in ASP and ASP.NET.
+That's all basic HTML markup, except for the only line inside the body tag. The `{%raw%}{% … %}{%endraw%}` tags in the content are Django-specific and are used to provide some kind of logic while the template is being rendered. It's the equivalent to `<?php ?>` in PHP or the `<% … %>` in ASP and ASP.NET.
 
 Now that we have created a block called 'content' (that's the parameter after the keyword 'block' and it could be anything we would like), we can create another page that extends this base page.
 
@@ -471,7 +471,7 @@ Now that we have created a block called 'content' (that's the parameter after th
 
 Here's the template for our index page. In the first line we specify what other template it's extending. Note that the templates folder is not mentioned in the path; we just need to include whatever's after the templates folder in the path to our file.
 
-To extend the block we have previously created in the base.html page, we use the exact same syntax, but this time we add our content in it. We are iterating the items with a simple for loop; we output the items' text using the `{{ … }}` tags. Then we handle the specific case for when the for-loop has no items using the `{% empty %}` tag, and then we close the loop with the endfor keyword.
+To extend the block we have previously created in the base.html page, we use the exact same syntax, but this time we add our content in it. We are iterating the items with a simple for loop; we output the items' text using the `{%raw%}{{ … }}{%endraw%}` tags. Then we handle the specific case for when the for-loop has no items using the `{%raw%}{% empty %}{%endraw%}` tag, and then we close the loop with the endfor keyword.
 
 Our first view is almost done: we must tell Django what URL we want to use to place that view. Django allows the use of a hierarchy system for defining the URLs, that means that we can either define all the URLs in the same file, but we also can define a sub-URL for each app and then delegate the URL definition to the app. For example, we can tell Django that all the URLs related to the 'todo' project are going to be located under /todo/ and then define the path to the other views inside our todo project.
 
@@ -607,11 +607,11 @@ Note that in the second line we had to add the import to our view and also add t
 ...
 ```
 
-There are several things worth explaining. First, we have a form that is going to do a POST on submit and it's going to do it to the 'create' page; we have used the `{% url "..." %}` tag to point at that URL. The advantage of using the URL tag is that if we later decide to change the location of that view, we don't need to update all the templates and views in the system. The framework takes care of re-routing all the links to the new URLs.
+There are several things worth explaining. First, we have a form that is going to do a POST on submit and it's going to do it to the 'create' page; we have used the `{%raw%}{% url "..." %}{%endraw%}` tag to point at that URL. The advantage of using the URL tag is that if we later decide to change the location of that view, we don't need to update all the templates and views in the system. The framework takes care of re-routing all the links to the new URLs.
 
 We have 3 elements inside that form: a label, an input, and a button. The name of the input is what the browsers send to the server when a form is submitted. That 'name=text' matches with the field we are expecting in our view, as defined above in the views.py file.
 
-We also have added a tag `{% csrf_token %}`. That's a hidden field generated and validated by Django that prevents CSRF attacks on our site. CSRF stands for Cross-Site Request Forgery and is a type of attack where another user attempts to send information to the site on behalf of a legitimate user. The token generated is some kind of pre-authorization we make to allow the user to send content to our site. Since our site is anonymous so far, it really doesn't add much value, but it's recommended to add it just in case we want to add users in the future.
+We also have added a tag `{%raw%}{% csrf_token %}{%endraw%}`. That's a hidden field generated and validated by Django that prevents CSRF attacks on our site. CSRF stands for Cross-Site Request Forgery and is a type of attack where another user attempts to send information to the site on behalf of a legitimate user. The token generated is some kind of pre-authorization we make to allow the user to send content to our site. Since our site is anonymous so far, it really doesn't add much value, but it's recommended to add it just in case we want to add users in the future.
 
 Adding the update and delete view to complete our application is pretty much the same we did until now.
 
