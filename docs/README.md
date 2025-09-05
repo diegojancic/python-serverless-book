@@ -2,6 +2,12 @@
 
 ## Building the Perfect Stack for Startups
 
+> 📝 **Author's Note (2024)**: This book was originally written in 2019 but was never completed. While the core technologies and concepts covered (Python, Django, AWS Lambda, serverless architecture) remain valid and useful in many scenarios, the landscape has evolved significantly. 
+>
+> With advances in AI, containerization, and cloud platforms, today's recommendations for building scalable web applications might differ depending on your team's expertise, project requirements, and the current technology ecosystem. However, the fundamental principles and hands-on examples in this book still provide valuable learning opportunities.
+>
+> This book has been made publicly available in case it proves helpful to anyone interested in serverless development, Python web frameworks, or AWS Lambda. Feel free to use it as a learning resource, keeping in mind that some specific recommendations may no longer represent current best practices.
+
 **Abstract:** Publishing a web application has evolved from having to purchase your own hardware a couple decades ago, to being able to create and destroy virtual servers in a matter of minutes by using cloud hosting services. In this book we'll go a step further and create web applications that can run on hundreds of servers without having to provision them in advance or manage the underlying infrastructure at all. We'll build highly scalable applications using Python and Django and deploy them worldwide, using Zappa, to AWS Lambda. Finally we'll build an entire serverless stack that grows (and shrinks!) as our demand changes.
 
 ## Table of Contents

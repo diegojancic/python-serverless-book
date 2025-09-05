@@ -1,5 +1,11 @@
 # Preface
 
+> 📝 **Important Note from the Author**: This book was written in 2019 but remained incomplete. Upon reflection, I realized that the approach presented here may not be the optimal solution for many use cases. The technology landscape has evolved significantly since then, particularly with advances in AI, containerization, and cloud-native solutions.
+>
+> While the technologies covered (Python, Django, AWS Lambda, serverless patterns) remain relevant and valuable in specific scenarios, today's architectural decisions should consider the broader ecosystem and your team's capabilities. This book is made publicly available as a learning resource for those interested in serverless development, with the understanding that current best practices may differ from the approaches described here.
+>
+> The core concepts and hands-on examples remain educational and applicable, so please use this material as a stepping stone in your learning journey.
+
 I've decided to write this book because technology advances very quickly, but many of the developers who work in this field cannot catch up with all the changes. There are many new programming languages, frameworks, and libraries coming out every day. Some of them will be part of the future, while others will unfortunately become obsolete in just a few years. Picking the correct technologies is, for us, a challenging task; it requires days or even weeks to learn a new technology, and sometimes we find that because one of the big players in the industry decides not to adopt it, we soon realize that we have wasted time and need to learn another, hopefully better, technology.
 
 My goal with this book is to introduce you to several technologies—most of them are either very mature, supported by large companies, or groundbreaking. That might not make too much sense yet, but those are the key points I've used to pick the technologies we'll explore here, and in my opinion, they are critical for building the stack we are going to work on.
